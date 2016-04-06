@@ -1,0 +1,41 @@
+{
+  "name": "safe-ambition-splash-page",
+  "version": "1.0.0",
+  "description": "A temporary splash page for the new SAFE Ambition site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Brammer",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-pug": "^1.0.0",
+    "gulp-sass": "^2.2.0",
+    "pug": "^0.1.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-pug": "^1.0.0",
+    "gulp-sass": "^2.2.0",
+    "pug": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtbrmr/safe-ambition-splash-page.git"
+  },
+  "keywords": [
+    "pugjs",
+    "sass",
+    "gulp",
+    "autoprefixer",
+    "splash",
+    "page"
+  ],
+  "bugs": {
+    "url": "https://github.com/mtbrmr/safe-ambition-splash-page/issues"
+  },
+  "homepage": "https://github.com/mtbrmr/safe-ambition-splash-page#readme"
+}
