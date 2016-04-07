@@ -1,1 +1,73 @@
+/* Written by Matt Brammer
+   twitter.com/mtbrmr
+   Something not quite right? github.com/mtbrmr/safe-ambition-splash-page/issues
+
 @import "normalize"
+@import "simple-line-icons"
+
+// Variables
+$purple: #5c186b
+$white: #fffff5
+$yellow: #ffd98e
+$dark-grey: #343031
+$light-grey: #8b8788
+
+a
+  color: $yellow
+  text-decoration: none
+  &:hover
+    color: lighten($yellow, 20%)
+
+body
+  font-size: 16px
+  background-image: url('assets/img/barbican-bg.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  min-height: 100vh
+  font-family: 'PT Serif', serif
+
+h1
+  font-size: 5em
+h2
+  font-size: 4em
+h3
+  font-size: 2.5em
+
+h1, h2
+  font-family: 'Lobster Two', serif
+  color: $purple
+  margin-bottom: 0
+
+h3, h4, h5, h6
+  font-family: 'Lato', serif
+  color: $light-grey
+  margin-top: 0
+
+span.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+  background-color: transparentize($dark-grey, .1)
+
+.center
+  position: relative
+  z-index: 2
+  height: 100vh
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  flex-direction: column
+  .title
+    justify-content: center
+  .social
+    width: 80%
+    display: flex
+    justify-content: space-around
+    align-items: baseline
+    i
+      font-size: 10vw

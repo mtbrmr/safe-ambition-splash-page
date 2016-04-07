@@ -1,14 +1,25 @@
 doctype html
 html(lang="en")
   head
-    title SAFE Ambition - Coming Soon...
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title SAFE Ambition | More Than Music
+    meta(name='description', content='SAFE Ambition - a youth project based in Manchester')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(href='https://fonts.googleapis.com/css?family=Lobster+Two|Lato|PT+Serif', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", type="text/css", href="assets/animate.min.css")
     link(rel="stylesheet", href="style.css")
   body
-    h1 Pug - node template engine
-    #container.col
-      if youAreUsingPug
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Pug is a terse and simple templating language with a strong focus on performance and powerful features.
+    span.overlay
+    .center
+      .title
+        h1 SAFE Ambition
+        h3 More Than Music
+      .social
+        a(href="#" class="facebook social")
+          i.icon-social-facebook
+        a(href="#" class="twitter social")
+          i.icon-social-twitter
+        a(href="#" class="youtube social")
+          i.icon-social-youtube
+        
