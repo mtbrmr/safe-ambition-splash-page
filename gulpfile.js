@@ -1,7 +1,7 @@
-var gulp   = require('gulp');
-var sass   = require('gulp-sass');
+var gulp    = require('gulp');
+var sass    = require('gulp-sass');
 var prefix  = require('gulp-autoprefixer');
-var pug    = require('gulp-pug');
+var pug     = require('gulp-pug');
 
 gulp.task('default', function(){
   console.log('running');

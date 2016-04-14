@@ -926,9 +926,12 @@ th {
 
 a {
   color: #ffd98e;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.2s ease-in-out; }
   a:hover {
-    color: #fffbf4; }
+    color: #fffbf4;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2); }
 
 body {
   font-size: 16px;
@@ -936,8 +939,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100vh;
-  font-family: 'PT Serif', serif; }
+  height: 100vh;
+  font-family: 'PT Serif', serif;
+  overflow: hidden; }
 
 h1 {
   font-size: 5em; }
@@ -965,12 +969,13 @@ span.overlay {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: rgba(52, 48, 49, 0.9); }
+  background-color: rgba(52, 48, 49, 0.9);
+  height: 100vh; }
 
 .center {
   position: relative;
   z-index: 2;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -988,16 +993,18 @@ span.overlay {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .center .social {
-    width: 80%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-align-items: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline; }
-    .center .social i {
-      font-size: 10vw; }
+
+.social {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+  .social i {
+    font-size: 8vw; }

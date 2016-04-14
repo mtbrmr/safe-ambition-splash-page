@@ -15,8 +15,10 @@ $light-grey: #8b8788
 a
   color: $yellow
   text-decoration: none
+  transition: 0.2s ease-in-out
   &:hover
     color: lighten($yellow, 20%)
+    transform: scale(1.2)
 
 body
   font-size: 16px
@@ -24,8 +26,9 @@ body
   background-size: cover
   background-repeat: no-repeat
   background-position: center
-  min-height: 100vh
+  height: 100vh
   font-family: 'PT Serif', serif
+  overflow: hidden
 
 h1
   font-size: 5em
@@ -52,11 +55,12 @@ span.overlay
   right: 0
   z-index: 1
   background-color: transparentize($dark-grey, .1)
+  height: 100vh
 
 .center
   position: relative
   z-index: 2
-  height: 100vh
+  height: 80vh
   text-align: center
   display: flex
   align-items: center
@@ -64,10 +68,11 @@ span.overlay
   flex-direction: column
   .title
     justify-content: center
-  .social
-    width: 80%
-    display: flex
-    justify-content: space-around
-    align-items: baseline
-    i
-      font-size: 10vw
+.social
+  width: 100%
+  display: flex
+  z-index: 2
+  justify-content: center
+  align-items: baseline
+  i
+    font-size: 8vw
